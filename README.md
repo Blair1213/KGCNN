@@ -41,11 +41,11 @@ $ autoreviewer https://github.com/rs-costa/sbml2hyb
 
 ## 🚀 Installation
 
-The most recent release can be installed from
-[PyPI](https://pypi.org/project/autoreviewer/) with:
+First, clone the Github repository:
 
 ```bash
-$ pip install autoreviewer
+$ git clone https://github.com/blair1213/KGCNN
+$ cd KGCNN
 ```
 
 The most recent code and data can be installed directly from GitHub with:
