@@ -1,5 +1,5 @@
 <h1 align="center">
-  AutoReviewer
+  Knowledge Graph Neural Network with Spatial-Aware Capsules for Drug-Drug Interactions Prediction
 </h1>
 
 <p align="center">
