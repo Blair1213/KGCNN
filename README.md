@@ -1,5 +1,5 @@
 <h1 align="center">
-  Knowledge Graph Neural Network with Spatial-Aware Capsules for Drug-Drug Interactions Prediction
+  [KGCNN] Knowledge Graph Neural Network with Spatial-Aware Capsules for Drug-Drug Interactions Prediction
 </h1>
 
 <p align="center">
@@ -52,13 +52,18 @@ $ conda activate kgcnn
 
 The dataset used in this work can be accessed at [Dataset](https://github.com/cthoyt/autoreviewer/actions?query=workflow%3ATests).
 
-### 🛠️ Testing
+### 🛠️ Training and Testing
 
-After cloning the repository and installing all dependencies. You can run following command to train our model:
+After cloning the repository and installing all dependencies. You can run the following command to train our model:
 
 ```
 $ python run.py
 ```
+The trained model will be saved under :
+```
+$ ./ckpt/KGCNN_{dataset_name}_neigh_{neighbor_number}_embed_{embedding_dimension}_depth_{network_layer}_optimizer_adam_lr_{lr}_batch_size_{bz}_epoch_{epoch_num}.hdf5
+```
+For testing model, just load it and test it on testing dataset.
 ### ⚖️ License
 
 The code in this package is licensed under the MIT License.
