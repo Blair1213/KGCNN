@@ -31,36 +31,26 @@
 
 ## 👀 Overview of KGCNN
 
-Desired interface:
-
-Run on the command line with:
-
-```shell
-$ autoreviewer https://github.com/rs-costa/sbml2hyb
-```
+Uncovering novel drug-drug interactions (DDIs) plays a pivotal role in advancing drug development and improving clinical treatment. The outstanding effectiveness of graph neural networks (GNNs) has garnered significant interest in the field of DDI prediction. Consequently, there has been a notable surge in the development of network-based computational approaches for predicting DDIs. However, current approaches face limitations in capturing the spatial relationships between neighboring nodes and their higher-level features during the aggregation of neighbor representations. To address this issue, this study introduces a novel model, KGCNN, designed to comprehensively tackle DDI prediction tasks by considering spatial relationships between molecules within the biomedical knowledge graph (BKG). KGCNN is built upon a message-passing GNN framework, consisting of propagation and aggregation. In the context of the BKG, KGCNN governs the propagation of information based on semantic relationships, which determine the flow and exchange of information between different molecules. In contrast to traditional linear aggregators, KGCNN introduces a spatial-aware capsule aggregator, which effectively captures the spatial relationships among neighboring molecules and their higher-level features within the graph structure. The ultimate goal is to leverage these learned drug representations to predict potential DDIs. To evaluate the effectiveness of KGCNN, it undergoes testing on two datasets. Extensive experimental results demonstrate its superiority in DDI predictions and quantified performance. 
 
 ## 🚀 Installation
 
-First, clone the Github repository:
+1⃣️ First, clone the Github repository:
 
 ```bash
 $ git clone https://github.com/blair1213/KGCNN
 $ cd KGCNN
 ```
 
-Then, set up the environment. This codebase leverages Python, Pytorch, Pytorch Geometric, etc. To create an environment with all of the required packages, please ensure that conda is installed and then execute the commands:
+2⃣️ Then, set up the environment. This codebase leverages Python, Pytorch, Pytorch Geometric, etc. To create an environment with all of the required packages, please ensure that conda is installed and then execute the commands:
 
 ```bash
 $ conda env create -f kgcnn.yaml
 $ conda activate kgcnn
 ```
-Download Datasets
+3⃣️ Download Datasets
 
-The dataset used in this work can be accessed at [GitHub Action](https://github.com/cthoyt/autoreviewer/actions?query=workflow%3ATests).
-
-### ⚖️ License
-
-The code in this package is licensed under the MIT License.
+The dataset used in this work can be accessed at [Dataset](https://github.com/cthoyt/autoreviewer/actions?query=workflow%3ATests).
 
 ### 🛠️ Testing
 
@@ -69,6 +59,8 @@ After cloning the repository and installing all dependencies. You can run follow
 ```
 $ python run.py
 ```
+### ⚖️ License
 
+The code in this package is licensed under the MIT License.
 
 </details>
