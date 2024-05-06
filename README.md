@@ -48,7 +48,7 @@ $ git clone https://github.com/blair1213/KGCNN
 $ cd KGCNN
 ```
 
-The most recent code and data can be installed directly from GitHub with:
+Then, set up environment. This codebase leverages Python, Pytorch, Pytorch Geometric, etc. To create an environment with all of the required packages, please ensure that conda is installed and then execute the commands:
 
 ```bash
 $ pip install git+https://github.com/cthoyt/autoreviewer.git
