@@ -3,9 +3,6 @@
 </h1>
 
 <p align="center">
-    <a href="https://github.com/cthoyt/autoreviewer/actions?query=workflow%3ATests">
-        <img alt="Tests" src="https://github.com/cthoyt/autoreviewer/workflows/Tests/badge.svg" />
-    </a>
     <a href="https://pypi.org/project/autoreviewer">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/autoreviewer" />
     </a>
@@ -32,35 +29,7 @@
     </a>
 </p>
 
-Scientists often do the same bad stuff. Automate giving feedback during peer review for Python packages.
-
-Goals:
-
-1. Given a GitHub repository, automate finding common issues such as
-    - No setup.py/setup.cfg/pyproject.toml
-    - No zenodo archive linked from the README
-    - Non-standard code layout (`src/` or bust)
-    - Files contain hard-coded file paths
-    - No documentation (search README for link to readthedocs)
-    - Package name doesn't match github repository name
-    - No reproducible installation instructions (i.e., does the README contain `pip`)
-    - Uses conda for installation
-    - Code does not have consistent style (i.e., there's no configuration for `black`)
-    - `pyroma` doesn't pass 10/10
-    - missing `LICENSE` file
-    - missing `CITATION.cff` file
-2. Automate sending issues to the repository instructing how to do these things
-    - Use deterministic titles for all issues to avoid duplicates / make idempotent
-    - Create and edit "epic" issue that links others
-
-Example Reviews:
-
-- https://github.com/fanavarro/lexical-analysis-obo-foundry/issues/4
-- https://github.com/krishnanlab/PecanPy/issues/12
-- https://github.com/huihui1126/drugSim-pathway/issues/14
-
-Want to collaborate? What do you expect out of Python packages? Let me know in the comments. I envision this being sort
-of modular so people can contribute their own checks.
+## 👀 Overview of KGCNN
 
 Desired interface:
 
@@ -69,15 +38,6 @@ Run on the command line with:
 ```shell
 $ autoreviewer https://github.com/rs-costa/sbml2hyb
 ```
-
-## J. Chem. Inf. Analysis
-
-![](/src/autoreviewer/jcheminf/jcheminf_summary.png)
-
-There's a submodule `autoreviewer.jcheminf` that has utilities for scraping the paper list
-from the Journal of Cheminformatics, getting their ePub files,
-extracting GitHub references from the availability statements, running autoreview on each,
-then making the following summary with `python -m autoreviewer.jcheminf`.
 
 ## 🚀 Installation
 
@@ -94,26 +54,11 @@ The most recent code and data can be installed directly from GitHub with:
 $ pip install git+https://github.com/cthoyt/autoreviewer.git
 ```
 
-You'll also need to make sure [`pandoc`](https://pandoc.org/) is installed.
-The best way to do this is `brew install pandoc` on macOS.
-
-## 👐 Contributing
-
-Contributions, whether filing an issue, making a pull request, or forking, are appreciated. See
-[CONTRIBUTING.md](https://github.com/cthoyt/autoreviewer/blob/master/.github/CONTRIBUTING.md) for more information on
-getting involved.
-
 ## 👋 Attribution
 
 ### ⚖️ License
 
 The code in this package is licensed under the MIT License.
-
-### 🍪 Cookiecutter
-
-This package was created with [@audreyfeldroy](https://github.com/audreyfeldroy)'s
-[cookiecutter](https://github.com/cookiecutter/cookiecutter) package using [@cthoyt](https://github.com/cthoyt)'s
-[cookiecutter-snekpack](https://github.com/cthoyt/cookiecutter-snekpack) template.
 
 ## 🛠️ For Developers
 
