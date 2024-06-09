@@ -23,7 +23,7 @@ $ conda activate kgcnn
 ```
 3⃣️ Download Datasets
 
-The dataset used in this work can be accessed at [Dataset](https://drive.google.com/file/d/1zrMvnvbG2Ln6kfsVY47HPDJl1Iu0fWGC/view?usp=share_link). After download the kgcnn_raw_data.zip, please unzip it to raw_data.
+The dataset used in this work can be accessed at [Dataset(google drive)](https://drive.google.com/file/d/1zrMvnvbG2Ln6kfsVY47HPDJl1Iu0fWGC/view?usp=share_link) or [Dataset (zenodo)](https://zenodo.org/records/11529900). After download the kgcnn_raw_data.zip, please unzip it to raw_data.
 
 ### 🛠️ Training and Testing
 
