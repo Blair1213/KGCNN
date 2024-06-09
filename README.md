@@ -42,7 +42,9 @@ For testing model, just load it and test it on testing dataset.
 
 If you want to benchmark KGCNN with your own dataset. You are kindly requested to perpare the follwing three files, including approved_example.txt, entity2id.txt, and train2id.txt.
 
-The approved_example.txt store all DDI samples, including positive samples and negative samples. The format is [drug_id, drug_id, rel_id, label].
+- The approved_example.txt stores all DDI samples, including positive samples and negative samples. The format is [drug_id, drug_id, rel_id, label].
+- The entity2id.txt stores the mapping between entity name and entity index in corresponding graph. The format is [entity source, entity_id].
+- The train2id.txt stores all triples in biomedical knowledge graph. The format is [head_id, tail_id, rel_id].
 
 
 ### ⚖️ License
