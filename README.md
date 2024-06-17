@@ -40,7 +40,9 @@ For testing model, just load it and test it on testing dataset.
 
 ### 🏙️ Figure 
 
-To recover each figure presented in this paper, please download the code and data at [Fig.zip(google drive)](https://drive.google.com/file/d/1sCM8xh9tdyhAU0fHUPiyVbJwQeKvBwu2/view?usp=sharing) or [Fig.zip (zenodo)](https://zenodo.org/records/11554803). You could find all code and initial data in this folder to recover each figure. By the way, some figures are painted by GraphPad, so we also uploaded the initial file of GraphPad.
+To recover each figure presented in this paper, please download the code and data at [Fig.zip(google drive)](https://drive.google.com/file/d/1sCM8xh9tdyhAU0fHUPiyVbJwQeKvBwu2/view?usp=sharing) or [Fig.zip (zenodo)](https://zenodo.org/records/11554803). You could find all code and initial data in this folder to recover each figure. By the way, some figures are painted by GraphPad, so we also uploaded the initial file of GraphPad. 
+
+You can also access some figures in this repo by clicking 'Fig'.
 
 ### 🌟 Personalize based on your own dataset
 
